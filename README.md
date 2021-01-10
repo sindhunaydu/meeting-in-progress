@@ -33,6 +33,10 @@ The two Python scripts I used for this project are,
 - led_test.py
 - button_test.py
 
+The numbering of LEDs (took a while to figure that out),
+
+* add table
+
 Finally I executed the following command to run button_test.py and activated the LED meeting-in-progress project, 
 
 `sudo python3 button_test.py`
