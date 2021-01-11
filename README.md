@@ -13,7 +13,7 @@ Wiring information - I connected to the following GPIOs, but it can be connected
 
   1. 8x8 NeoPixel LED Matrix
   
-    - DIN -> GPIO
+    - DIN -> GPIO18
     - GND -> GND
     - 5v -> 5V
 
@@ -37,9 +37,8 @@ The numbering of LEDs (took a while to figure that out),
 
 <img width="233" alt="Screen Shot 2021-01-10 at 3 50 41 PM" src="https://user-images.githubusercontent.com/1637811/104138961-d9235480-535c-11eb-963d-646c36089b47.png">
 
-* add table
-
 Finally I executed the following command to run button_test.py and activated the LED meeting-in-progress project, 
 
 `sudo python3 buttonController.py`
 
+Link medium blog
