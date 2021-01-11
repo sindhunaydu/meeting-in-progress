@@ -35,6 +35,7 @@ The two Python scripts I used for this project are,
 
 The numbering of LEDs (took a while to figure that out),
 
+<img width="233" alt="Screen Shot 2021-01-10 at 3 50 41 PM" src="https://user-images.githubusercontent.com/1637811/104138961-d9235480-535c-11eb-963d-646c36089b47.png">
 
 * add table
 
