@@ -41,5 +41,5 @@ The numbering of LEDs (took a while to figure that out),
 
 Finally I executed the following command to run button_test.py and activated the LED meeting-in-progress project, 
 
-`sudo python3 button_test.py`
+`sudo python3 buttonController.py`
 
