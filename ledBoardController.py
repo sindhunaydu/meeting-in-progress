@@ -1,1 +1,148 @@
+from rpi_ws281x import *
+from time import sleep
 
+LED_COUNT = 64
+LED_PIN = 18
+LED_FREQ_HZ = 800000
+LED_DMA = 10
+LED_BRIGHTNESS = 5
+LED_INVERT = False
+LED_CHANNEL = 0
+
+matrix = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
+matrix.begin()
+
+# MIC ON - BLUE
+def led_mic_on():
+    matrix.setPixelColor(50, Color(0, 255, 255))
+    matrix.setPixelColor(51, Color(0, 255, 255))
+    matrix.setPixelColor(41, Color(0, 255, 255))
+    matrix.setPixelColor(42, Color(0, 255, 255))
+    matrix.setPixelColor(43, Color(0, 255, 255))
+    matrix.setPixelColor(44, Color(0, 255, 255))
+    matrix.setPixelColor(45, Color(0, 255, 255))
+    matrix.setPixelColor(46, Color(0, 255, 255))
+    matrix.setPixelColor(39, Color(0, 255, 255))
+    matrix.setPixelColor(34, Color(0, 255, 255))
+    matrix.setPixelColor(33, Color(0, 255, 255))
+    matrix.setPixelColor(32, Color(0, 255, 255))
+    matrix.setPixelColor(29, Color(0, 255, 255))
+    matrix.setPixelColor(30, Color(0, 255, 255))
+    matrix.setPixelColor(31, Color(0, 255, 255))
+    matrix.setPixelColor(24, Color(0, 255, 255))
+    matrix.setPixelColor(17, Color(0, 255, 255))
+    matrix.setPixelColor(18, Color(0, 255, 255))
+    matrix.setPixelColor(19, Color(0, 255, 255))
+    matrix.setPixelColor(20, Color(0, 255, 255))
+    matrix.setPixelColor(21, Color(0, 255, 255))
+    matrix.setPixelColor(22, Color(0, 255, 255))
+    matrix.setPixelColor(13, Color(0, 255, 255))
+    matrix.setPixelColor(12, Color(0, 255, 255))
+    matrix.show()
+    
+# HEAD PHONES ON - YELLOW
+def led_audio_on():
+    matrix.setPixelColor(63, Color(253, 254, 2))
+    matrix.setPixelColor(62, Color(253, 254, 2))
+    matrix.setPixelColor(61, Color(253, 254, 2))
+    matrix.setPixelColor(60, Color(253, 254, 2))
+    matrix.setPixelColor(59, Color(253, 254, 2))
+    matrix.setPixelColor(48, Color(253, 254, 2))
+    matrix.setPixelColor(53, Color(253, 254, 2))
+    matrix.setPixelColor(51, Color(253, 254, 2))
+    matrix.setPixelColor(50, Color(253, 254, 2))
+    matrix.setPixelColor(49, Color(253, 254, 2))
+    matrix.setPixelColor(44, Color(253, 254, 2))
+    matrix.setPixelColor(45, Color(253, 254, 2))
+    matrix.setPixelColor(46, Color(253, 254, 2))
+    matrix.setPixelColor(47, Color(253, 254, 2))
+    matrix.setPixelColor(41, Color(253, 254, 2))
+    matrix.setPixelColor(38, Color(253, 254, 2))
+    matrix.setPixelColor(25, Color(253, 254, 2))
+    matrix.setPixelColor(22, Color(253, 254, 2))
+    matrix.setPixelColor(16, Color(253, 254, 2))
+    matrix.setPixelColor(17, Color(253, 254, 2))
+    matrix.setPixelColor(18, Color(253, 254, 2))
+    matrix.setPixelColor(19, Color(253, 254, 2))
+    matrix.setPixelColor(15, Color(253, 254, 2))
+    matrix.setPixelColor(14, Color(253, 254, 2))
+    matrix.setPixelColor(13, Color(253, 254, 2))
+    matrix.setPixelColor(12, Color(253, 254, 2))
+    matrix.setPixelColor(10, Color(253, 254, 2))
+    matrix.setPixelColor(4, Color(253, 254, 2))
+    matrix.setPixelColor(3, Color(253, 254, 2))
+    matrix.setPixelColor(2, Color(253, 254, 2))
+    matrix.setPixelColor(1, Color(253, 254, 2))
+    matrix.setPixelColor(0, Color(253, 254, 2))
+
+    matrix.show()
+    
+#VIDEO ON - PURPLE
+def led_video_on():
+    matrix.setPixelColor(56, Color(199, 36, 177))
+    matrix.setPixelColor(57, Color(199, 36, 177))
+    matrix.setPixelColor(58, Color(199, 36, 177))
+    matrix.setPixelColor(59, Color(199, 36, 177))
+    matrix.setPixelColor(60, Color(199, 36, 177))
+    matrix.setPixelColor(61, Color(199, 36, 177))
+    matrix.setPixelColor(62, Color(199, 36, 177))
+    matrix.setPixelColor(63, Color(199, 36, 177))
+    matrix.setPixelColor(55, Color(199, 36, 177))
+    matrix.setPixelColor(48, Color(199, 36, 177))
+    matrix.setPixelColor(40, Color(199, 36, 177))
+    matrix.setPixelColor(47, Color(199, 36, 177))
+    matrix.setPixelColor(39, Color(199, 36, 177))
+    matrix.setPixelColor(32, Color(199, 36, 177))
+    matrix.setPixelColor(25, Color(199, 36, 177))
+    matrix.setPixelColor(26, Color(199, 36, 177))
+    matrix.setPixelColor(27, Color(199, 36, 177))
+    matrix.setPixelColor(28, Color(199, 36, 177))
+    matrix.setPixelColor(29, Color(199, 36, 177))
+    matrix.setPixelColor(30, Color(199, 36, 177))
+    matrix.setPixelColor(21, Color(199, 36, 177))
+    matrix.setPixelColor(18, Color(199, 36, 177))
+    matrix.setPixelColor(9, Color(199, 36, 177))
+    matrix.setPixelColor(14, Color(199, 36, 177))
+    matrix.setPixelColor(7, Color(199, 36, 177))
+    matrix.setPixelColor(6, Color(199, 36, 177))
+    matrix.setPixelColor(5, Color(199, 36, 177))    
+    matrix.setPixelColor(4, Color(199, 36, 177))
+    matrix.setPixelColor(3, Color(199, 36, 177))
+    matrix.setPixelColor(2, Color(199, 36, 177))
+    matrix.setPixelColor(1, Color(199, 36, 177))
+    matrix.setPixelColor(0, Color(199, 36, 177))
+
+    matrix.show()
+    
+#DND - RED    
+def led_dnd(): 
+    matrix.setPixelColor(58, Color(254, 0, 0))
+    matrix.setPixelColor(59, Color(254, 0, 0))
+    matrix.setPixelColor(60, Color(254, 0, 0))
+    matrix.setPixelColor(61, Color(254, 0, 0))
+    matrix.setPixelColor(54, Color(254, 0, 0))
+    matrix.setPixelColor(49, Color(254, 0, 0))
+    matrix.setPixelColor(40, Color(254, 0, 0))
+    matrix.setPixelColor(42, Color(254, 0, 0))
+    matrix.setPixelColor(47, Color(254, 0, 0))
+    matrix.setPixelColor(39, Color(254, 0, 0))
+    matrix.setPixelColor(36, Color(254, 0, 0))
+    matrix.setPixelColor(32, Color(254, 0, 0))
+    matrix.setPixelColor(24, Color(254, 0, 0))
+    matrix.setPixelColor(28, Color(254, 0, 0))
+    matrix.setPixelColor(31, Color(254, 0, 0))
+    matrix.setPixelColor(23, Color(254, 0, 0))
+    matrix.setPixelColor(18, Color(254, 0, 0))
+    matrix.setPixelColor(16, Color(254, 0, 0))
+    matrix.setPixelColor(9, Color(254, 0, 0))
+    matrix.setPixelColor(14, Color(254, 0, 0))
+    matrix.setPixelColor(5, Color(254, 0, 0))
+    matrix.setPixelColor(4, Color(254, 0, 0))
+    matrix.setPixelColor(3, Color(254, 0, 0))
+    matrix.setPixelColor(2, Color(254, 0, 0))
+    matrix.show()
+    
+def led_off():
+    for x in range(0, LED_COUNT):
+        matrix.setPixelColor(x, Color(0, 0, 0))
+        matrix.show()
