@@ -12,7 +12,7 @@ LED_CHANNEL = 0
 matrix = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
 matrix.begin()
 
-# MIC ON - BLUE
+# MIC ON - NEON BLUE
 def led_mic_on():
     matrix.setPixelColor(50, Color(0, 255, 255))
     matrix.setPixelColor(51, Color(0, 255, 255))
@@ -40,7 +40,7 @@ def led_mic_on():
     matrix.setPixelColor(12, Color(0, 255, 255))
     matrix.show()
     
-# HEAD PHONES ON - YELLOW
+# HEAD PHONES ON - LISTENING - YELLOW
 def led_audio_on():
     matrix.setPixelColor(63, Color(253, 254, 2))
     matrix.setPixelColor(62, Color(253, 254, 2))
@@ -77,7 +77,7 @@ def led_audio_on():
 
     matrix.show()
     
-#VIDEO ON - PURPLE
+#VIDEO ON - NEON PURPLE
 def led_video_on():
     matrix.setPixelColor(56, Color(199, 36, 177))
     matrix.setPixelColor(57, Color(199, 36, 177))
