@@ -18,11 +18,11 @@ Wiring information - I connected to the following GPIOs, but it can be connected
 
   2. Buttons
   
-    - Button 1 OUT -> GPIO
-    - Button 2 OUT -> GPIO
-    - Button 3 OUT -> GPIO
-    - Button 4 OUT -> GPIO
-    - Button 5 OUT -> GPIO
+    - Button 1 OUT -> GPIO 12
+    - Button 2 OUT -> GPIO 4
+    - Button 3 OUT -> GPIO 11
+    - Button 4 OUT -> GPIO 26
+    - Button 5 OUT -> GPIO 16
     Each button also had GND connections made to corresponding GND pins in the GPIO
 
 `pinout` - command turned out to be super useful for me to understand the GPIO pin positioning on my RPi 4
