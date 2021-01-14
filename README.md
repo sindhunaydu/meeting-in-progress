@@ -45,7 +45,8 @@ During the implementation phase, I used the following command to run buttonContr
 
 `sudo python3 buttonController.py`
 
-Once everything was in place, I wanted to use the Pi in headless mode and start the script by SSHing from my personal laptop and running the above command.
+Once everything was in place, I wanted to use the Pi in headless mode and kickoff buttonController script, 
+so I SSH'd from my personal laptop using the following commands,
 
 `ssh pi@raspberrypi.local
 sudo python3 buttonController.py`
