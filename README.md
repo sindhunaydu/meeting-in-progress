@@ -1,9 +1,9 @@
 # meeting-in-progress
 LED meeting indicator
 
-Compoments used - 
+Components used - 
 
-  - 8X8 NeoPixel LED Matrix from AliExpress
+  - 8X8 WS2812B LED Matrix from AliExpress
   - Raspberry Pi 4 
   - Jumper wires
   - 5 push switches from Amazon
