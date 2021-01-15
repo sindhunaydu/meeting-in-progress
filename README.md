@@ -50,3 +50,5 @@ so I SSH'd from my personal laptop using the following commands,
 
 `ssh pi@raspberrypi.local
 sudo python3 buttonController.py`
+
+More details available on my blog - https://s1ndhu.medium.com/the-one-with-the-raspberry-pi-3b572a9c219c
